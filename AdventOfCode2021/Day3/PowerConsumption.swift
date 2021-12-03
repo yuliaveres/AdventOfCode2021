@@ -9,29 +9,18 @@ import Foundation
 
 struct PowerConsumptionRate {
 
-    func rate(_ input: [Int], _ rate: Kind, maxNumber: Int) throws -> Int {
-        var binary = ""
+    func rate(_ input: [Int], _ rate: Kind, maxNumber: Int) -> Int {
+        var binary = 0
+
         for countOf1 in input {
             if rate.isValid(countOf1, maxNumber) {
-                binary.append("1")
+                binary = binary << 1 + 1
             } else {
-                binary.append("0")
+                binary = binary << 1
             }
         }
 
-        guard let number = Int(binary, radix: 2) else {
-            throw BinaryDiagnostic.Error.invlalidBinaryNumber
-        }
-
-        return number
-    }
-
-    private func isGamma(count: Int, maxCount: Int) -> Bool {
-       return max(maxCount - count, count) == count
-    }
-
-    private func isEpsilob(count: Int, maxCount: Int) -> Bool {
-        return min(maxCount - count, count) == count
+        return binary
     }
 }
 

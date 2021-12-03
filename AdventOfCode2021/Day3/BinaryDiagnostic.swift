@@ -25,15 +25,15 @@ struct BinaryDiagnostic {
                 continue
             }
 
-            if char == "1"{
+            if char == "1" {
                 map[index] = map[index] + 1
             }
 
             index += 1
         }
 
-        let gamma = try PowerConsumptionRate().rate(map, .gamma, maxNumber: numbersCount)
-        let epsilon = try PowerConsumptionRate().rate(map, .epsilon, maxNumber: numbersCount)
+        let gamma = PowerConsumptionRate().rate(map, .gamma, maxNumber: numbersCount)
+        let epsilon = PowerConsumptionRate().rate(map, .epsilon, maxNumber: numbersCount)
 
         return gamma * epsilon
     }
