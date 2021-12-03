@@ -25,7 +25,7 @@ final class Day2: XCTestCase {
     func testPart1() {
         let position: Int
         do {
-            position = try Dive().part1(input: day2Part1Input)
+            position = try Dive().part1(input: day2Input)
         } catch {
             XCTFail(error.localizedDescription)
             position = 0
@@ -49,7 +49,7 @@ final class Day2: XCTestCase {
     func testPart2() {
         let position: Int
         do {
-            position = try Dive().part2(input: day2Part2)
+            position = try Dive().part2(input: day2Input)
         } catch {
             XCTFail(error.localizedDescription)
             position = 0
