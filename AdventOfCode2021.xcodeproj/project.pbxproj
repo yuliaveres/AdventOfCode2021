@@ -16,6 +16,9 @@
 		2B34FB7B275A777100CEA639 /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B34FB7A275A777100CEA639 /* String+Subscript.swift */; };
 		2B34FB7D275A7E2300CEA639 /* PowerConsumption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B34FB7C275A7E2300CEA639 /* PowerConsumption.swift */; };
 		2B34FB7F275A7EDF00CEA639 /* LifeSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B34FB7E275A7EDF00CEA639 /* LifeSupport.swift */; };
+		2B34FB84275B454900CEA639 /* InputDay4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B34FB83275B454900CEA639 /* InputDay4.swift */; };
+		2B34FB87275B45A200CEA639 /* GiantSquid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B34FB86275B45A200CEA639 /* GiantSquid.swift */; };
+		2B34FB89275B524300CEA639 /* Day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B34FB88275B524300CEA639 /* Day4.swift */; };
 		2B9895CA2757D5260050B02A /* AdventOfCode2021App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9895C92757D5260050B02A /* AdventOfCode2021App.swift */; };
 		2B9895CC2757D5260050B02A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9895CB2757D5260050B02A /* ContentView.swift */; };
 		2B9895CE2757D5270050B02A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9895CD2757D5270050B02A /* Assets.xcassets */; };
@@ -45,6 +48,9 @@
 		2B34FB7A275A777100CEA639 /* String+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Subscript.swift"; sourceTree = "<group>"; };
 		2B34FB7C275A7E2300CEA639 /* PowerConsumption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerConsumption.swift; sourceTree = "<group>"; };
 		2B34FB7E275A7EDF00CEA639 /* LifeSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeSupport.swift; sourceTree = "<group>"; };
+		2B34FB83275B454900CEA639 /* InputDay4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDay4.swift; sourceTree = "<group>"; };
+		2B34FB86275B45A200CEA639 /* GiantSquid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiantSquid.swift; sourceTree = "<group>"; };
+		2B34FB88275B524300CEA639 /* Day4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4.swift; sourceTree = "<group>"; };
 		2B9895C62757D5260050B02A /* AdventOfCode2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventOfCode2021.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B9895C92757D5260050B02A /* AdventOfCode2021App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCode2021App.swift; sourceTree = "<group>"; };
 		2B9895CB2757D5260050B02A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +124,23 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		2B34FB80275B452400CEA639 /* Day4 */ = {
+			isa = PBXGroup;
+			children = (
+				2B34FB88275B524300CEA639 /* Day4.swift */,
+				2B34FB83275B454900CEA639 /* InputDay4.swift */,
+			);
+			path = Day4;
+			sourceTree = "<group>";
+		};
+		2B34FB85275B458100CEA639 /* Day4 */ = {
+			isa = PBXGroup;
+			children = (
+				2B34FB86275B45A200CEA639 /* GiantSquid.swift */,
+			);
+			path = Day4;
+			sourceTree = "<group>";
+		};
 		2B9895BD2757D5260050B02A = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +168,7 @@
 				2B9895F82757D6C40050B02A /* Day1 */,
 				2B34FB692759321400CEA639 /* Day2 */,
 				2B34FB71275A528000CEA639 /* Day3 */,
+				2B34FB85275B458100CEA639 /* Day4 */,
 				2B9895CD2757D5270050B02A /* Assets.xcassets */,
 				2B9895CF2757D5270050B02A /* Preview Content */,
 			);
@@ -165,6 +189,7 @@
 				2B9895F72757D67F0050B02A /* Day1 */,
 				2B34FB6A2759321D00CEA639 /* Day2 */,
 				2B34FB74275A52B800CEA639 /* Day3 */,
+				2B34FB80275B452400CEA639 /* Day4 */,
 			);
 			path = AdventOfCode2021Tests;
 			sourceTree = "<group>";
@@ -287,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B34FB7B275A777100CEA639 /* String+Subscript.swift in Sources */,
+				2B34FB87275B45A200CEA639 /* GiantSquid.swift in Sources */,
 				2B34FB7F275A7EDF00CEA639 /* LifeSupport.swift in Sources */,
 				2B9895FA2757D6E50050B02A /* SonarSweep.swift in Sources */,
 				2B34FB702759326000CEA639 /* Dive.swift in Sources */,
@@ -305,8 +331,10 @@
 				2B34FB76275A52CB00CEA639 /* Day3.swift in Sources */,
 				2B34FB6C2759322C00CEA639 /* Day2.swift in Sources */,
 				2B34FB78275A52E200CEA639 /* InputDay3.swift in Sources */,
+				2B34FB84275B454900CEA639 /* InputDay4.swift in Sources */,
 				2B34FB6E2759323600CEA639 /* InputDay2.swift in Sources */,
 				2B9895F62757D67C0050B02A /* InputDay1.swift in Sources */,
+				2B34FB89275B524300CEA639 /* Day4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
