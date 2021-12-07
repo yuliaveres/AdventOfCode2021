@@ -35,6 +35,7 @@ struct HydrothermalVenture {
                 for y in min...max {
                     let point = Point(x: vector.0.x, y: y)
                     if let existing = map[point] {
+                        guard existing < 2 else { continue }
                         map[point] = existing + 1
                     } else {
                         map[point] = 1
@@ -47,6 +48,7 @@ struct HydrothermalVenture {
                 for x in min...max {
                     let point = Point(x: x, y: vector.0.y)
                     if let existing = map[point] {
+                        guard existing < 2 else { continue }
                         map[point] = existing + 1
                     } else {
                         map[point] = 1
@@ -67,6 +69,7 @@ struct HydrothermalVenture {
                                   stride(from: y1, to: y2 + yStride, by: yStride)) {
                     let point = Point(x: x, y: y)
                     if let existing = map[point] {
+                        guard existing < 2 else { continue }
                         map[point] = existing + 1
                     } else {
                         map[point] = 1
