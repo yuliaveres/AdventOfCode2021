@@ -37,7 +37,6 @@ struct TheTreacheryOfWhales {
 
                 total += steps * (steps + 1) / 2
             }
-
             map[another] = total
         }
 
