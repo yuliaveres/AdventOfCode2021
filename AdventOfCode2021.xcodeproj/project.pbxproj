@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B29BCAD27626B55007E54DE /* Day09.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B29BCAC27626B55007E54DE /* Day09.swift */; };
+		2B29BCAF27626B66007E54DE /* Day09Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B29BCAE27626B66007E54DE /* Day09Input.swift */; };
+		2B29BCB227626B87007E54DE /* SmokeBasin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B29BCB127626B87007E54DE /* SmokeBasin.swift */; };
 		2B34FB6C2759322C00CEA639 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B34FB6B2759322C00CEA639 /* Day2.swift */; };
 		2B34FB6E2759323600CEA639 /* InputDay2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B34FB6D2759323600CEA639 /* InputDay2.swift */; };
 		2B34FB702759326000CEA639 /* Dive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B34FB6F2759326000CEA639 /* Dive.swift */; };
@@ -51,6 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B29BCAC27626B55007E54DE /* Day09.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day09.swift; sourceTree = "<group>"; };
+		2B29BCAE27626B66007E54DE /* Day09Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day09Input.swift; sourceTree = "<group>"; };
+		2B29BCB127626B87007E54DE /* SmokeBasin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeBasin.swift; sourceTree = "<group>"; };
 		2B34FB6B2759322C00CEA639 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
 		2B34FB6D2759323600CEA639 /* InputDay2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDay2.swift; sourceTree = "<group>"; };
 		2B34FB6F2759326000CEA639 /* Dive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dive.swift; sourceTree = "<group>"; };
@@ -104,6 +110,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B29BCAB27626B45007E54DE /* Day09 */ = {
+			isa = PBXGroup;
+			children = (
+				2B29BCAC27626B55007E54DE /* Day09.swift */,
+				2B29BCAE27626B66007E54DE /* Day09Input.swift */,
+			);
+			path = Day09;
+			sourceTree = "<group>";
+		};
+		2B29BCB027626B76007E54DE /* Day09 */ = {
+			isa = PBXGroup;
+			children = (
+				2B29BCB127626B87007E54DE /* SmokeBasin.swift */,
+			);
+			path = Day09;
+			sourceTree = "<group>";
+		};
 		2B34FB692759321400CEA639 /* Day02 */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +254,7 @@
 				2BA8EF40275DE0D80001D393 /* Day06 */,
 				2B6862A3275F6C7200487B15 /* Day07 */,
 				2B7715792760F74100014580 /* Day08 */,
+				2B29BCB027626B76007E54DE /* Day09 */,
 				2B9895CD2757D5270050B02A /* Assets.xcassets */,
 				2B9895CF2757D5270050B02A /* Preview Content */,
 			);
@@ -256,6 +280,7 @@
 				2BA8EF43275DE5590001D393 /* Day06 */,
 				2B6862A0275F6C1A00487B15 /* Day07 */,
 				2B77157A2760F76800014580 /* Day08 */,
+				2B29BCAB27626B45007E54DE /* Day09 */,
 			);
 			path = AdventOfCode2021Tests;
 			sourceTree = "<group>";
@@ -420,6 +445,7 @@
 				2B34FB7D275A7E2300CEA639 /* PowerConsumption.swift in Sources */,
 				2B6862A5275F6C8F00487B15 /* TheTreacheryOfWhales.swift in Sources */,
 				2BA8EF3D275C9AC50001D393 /* HydrothermalVenture.swift in Sources */,
+				2B29BCB227626B87007E54DE /* SmokeBasin.swift in Sources */,
 				2B9895CC2757D5260050B02A /* ContentView.swift in Sources */,
 				2B34FB73275A529B00CEA639 /* BinaryDiagnostic.swift in Sources */,
 				2BA8EF42275DE11F0001D393 /* Lanternfish.swift in Sources */,
@@ -431,7 +457,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B29BCAF27626B66007E54DE /* Day09Input.swift in Sources */,
 				2B9895DB2757D5270050B02A /* Day1.swift in Sources */,
+				2B29BCAD27626B55007E54DE /* Day09.swift in Sources */,
 				2B7715802761017E00014580 /* Day08Input.swift in Sources */,
 				2B34FB76275A52CB00CEA639 /* Day3.swift in Sources */,
 				2B34FB6C2759322C00CEA639 /* Day2.swift in Sources */,
