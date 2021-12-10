@@ -77,8 +77,6 @@ struct SmokeBasin {
     func part2(_ input: String) -> Int {
         let matrix = input.components(separatedBy: "\n").map { $0.compactMap { Int(String($0)) } }
 
-        var lowPoints: [Point] = []
-
         var sizes: [Int] = []
 
         for (lineIdx, line) in matrix.enumerated() {
