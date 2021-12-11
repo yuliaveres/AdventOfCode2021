@@ -43,9 +43,8 @@ struct SyntaxScoring {
     func part2(_ input: String) -> Int {
         let lines = input.components(separatedBy: "\n").map { $0.map { $0 } }
 
-        var stack: [SyntaxScoring.Bracket] = []
-
         let scores = lines.map { line -> Int? in
+            var stack: [SyntaxScoring.Bracket] = []
             var shouldStop = false
             for char in line {
 
@@ -57,7 +56,6 @@ struct SyntaxScoring {
                     if stack.last == bracket.pair {
                         stack.removeLast()
                     } else {
-                        stack.removeAll()
                         shouldStop = true
                         break
                     }
@@ -67,8 +65,6 @@ struct SyntaxScoring {
             guard !shouldStop else { return nil }
 
             let missing = stack.reversed().map { $0.pair }
-
-            stack.removeAll()
 
             return missing.reduce(0) { $0 * 5 + $1.autocompletionScore }
         }
